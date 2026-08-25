@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Keil: Build RS485",
+      "type": "process",
+      "command": "C:\\Keil_v5\\Keil_ARM\\UV4\\UV4.exe",
+      "args": [
+        "-b",
+        "${workspaceFolder}\\MDK-ARM\\RS485.uvprojx",
+        "-j0",
+        "-t",
+        "RS485",
+        "-o",
+        "${workspaceFolder}\\MDK-ARM\\.vscode\\uv4.log"
+      ],
+      "options": { "cwd": "${workspaceFolder}\\MDK-ARM" },
+      "problemMatcher": []
+    }
+  ]
+}
